@@ -19,10 +19,34 @@ body *{
     line-height: 160%;
 }
 
+header{
+    margin-top: 32px;
+}
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    display: flex;
+    border-radius: 50%;
+    padding: 4px;
+    transition: transform .3s;
+}
+
+header div:hover{
+    transform: scale(1.15);
+}
+
+header div img{
+    
+    width: 100%;
+    border-radius: 50%;
+}
+
+
 main{
     max-width: 500px;
     width: 90%;
-    margin: auto;
+    margin: 32px auto;
     display: grid;
     gap: 24px;
 
@@ -63,6 +87,13 @@ section ul{
     margin-top: 24px;
 }
 
+section ul li{
+    transition: transform 0.45s;
+}
+section ul li:hover{
+    transform: scale(1.3);
+}
+
 .game-list img{
     width: 90px;
     border-radius: 8px;
@@ -71,14 +102,4 @@ section ul{
 .channel-list img{
     width: 70px;
     border-radius: 50%;
-}
-header div{
-    background-image: inear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
-    padding: 4px;
-}
-
-header div img{
-    width: 116px;
-    border-radius: 50%;
-
 }
