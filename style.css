@@ -21,6 +21,7 @@ body *{
 
 header{
     margin-top: 32px;
+    height: 152px;
 }
 header div{
     width: 120px;
@@ -102,4 +103,47 @@ section ul li:hover{
 .channel-list img{
     width: 70px;
     border-radius: 50%;
+}
+
+header div{
+    animation: FromTop .7s .5s backwards;
+}
+
+main section{
+    animation: FromBotton 1s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0s;
+}
+
+main section:nth-child(2){
+     animation-delay: .4s;
+}
+main section:nth-child(3){
+    animation-delay: .8s;
+}
+
+@keyframes FromTop {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes FromBotton {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
